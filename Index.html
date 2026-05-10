@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rk</title>
+    <style type="text/css" media="all">
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body{
+        background: #0a0a0a;
+        color: white;
+        font-family: Sans-Serif;
+        scroll-behavior: smootg;
+      }
+      nav{
+        text-align: center;
+        padding: 15px;
+        border-bottom: 2px solid #7B2FBE;
+        box-shadow: 0 0 30px #7B2FBE;
+      }
+      nav a{
+        color: #BE2FBE;
+        text-decoration: none;
+        margin: 0 20px;
+      }
+      #home{
+        text-align: center;
+        margin-top: 100px;
+      }
+      h1{
+        font-size: 48px;
+        color: #BE2FBE;
+        text-shadow: 0 0 30px #BE2FBE;
+      }
+      p{
+        font-size: 20px;
+        color: #7B2FBE;
+        margin-top: 10px;
+      }
+      #hirebtn{
+        margin-top: 20px;
+        padding: 10px 30px;
+        background: transperent;
+        border: 2px solid #BE2FBE;
+        color: #BE2FBE;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 25px;
+        box-shadow: 0 0 15px #BE2FBE;
+      }
+      #hirebtn:hover{
+        background: #BE2FBE;
+        color: black;
+        box-shadow: 0 0 40px;
+        transition: all 0.4s ease;
+      }
+      #skills{
+        text-align: center;
+        margin-top:80px;
+      }
+      h2{
+        font-size: 36px;
+        color: #BE2FBE;
+        text-shadow: 0 0 20px #BE2FBE;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      .skill{
+        width: 60%;
+        margin: 15px auto;
+        text-align: left;
+      }
+      .bar-track{
+        width: 100%;
+        height: 10px;
+        background: rgba(255,255,255,0.1);
+      }
+      .bar-fill{
+        height: 100%;
+        width: var(--target);
+        background: linear-gradient(90deg, #7B2FBE, #BE2FBE);
+        box-shadow: 0 0 10px #BE2FBE;
+        border-radius: 10px;
+      }
+      .projects-grid{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .projects-grid img{
+        width: 100%;
+        border-radius: 10px;
+        border: 2px solid #7B2FBE;
+        box-shadow: 0 0 15px #7B2FBE;
+      }
+      .projects-grid img:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 30px #BE2FBE;
+        transition: all 0.3s ease;
+      }
+      #contact{
+        text-align:center;
+        margin-top: 80px;
+        padding: 50px;
+      }
+      #contact a{
+        color: #BE2FBE;
+        text-decoration: none;
+        margin: 0 20px;
+        font-size: 18px;
+        border: 2px solid  #BE2FBE;
+        padding: 10px 35px;
+        box-shadow: 0 0 15px #BE2FBE;
+      }
+      #contact a:hover{
+        background: #BE2FBE;
+        color: black;
+        transition: all 0.3s ease;
+      }
+      #contact p{
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+     <a href="#home">Home</a>
+     <a href="#skills">Skills</a>
+     <a href="#projects">Projects</a>
+     <a href="#contact">Contact</a>
+    </nav>
+     <section id="home">
+        <h1>Wakasa here</h1>
+        <p>One Man Army Dev</p>
+        <button id="hirebtn">Hire Me 💰</button>
+      </section>
+      <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skill">
+        <p>HTML - 80%</p>
+        <div class="bar-track">
+        <div class="bar-fill" style="--target: 80%"></div>
+         </div>
+        </div>
+        <div class="skill">
+        <p>CSS - 70%</p>
+        <div class="bar-track">
+        <div class="bar-fill" style="--target: 70%"></div>
+         </div>
+        </div>
+        <div class="skill">
+        <p>JAVASCRIPT - 65%</p>
+        <div class="bar-track">
+        <div class="bar-fill" style="--target: 65%"></div>
+         </div>
+        </div>
+        <div class="skill">
+        <p>FETCH API - 60%</p>
+        <div class="bar-track">
+        <div class="bar-fill" style="--target: 60%"></div>
+         </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+          <img src="project0.jpg" width="230"alt="" />
+          <img src="project1.jpg" width="230"alt="" />
+          <img src="project2.jpg" width="230"alt="" />
+          <img src="project3.jpg" width="230"alt="" />
+          <img src="project4.jpg" width="230"alt="" />
+          <img src="project5.jpg" width="230"alt="" />
+          <img src="project6.jpg" width="230"alt="" />
+          <img src="project7.jpg" width="230"alt="" />
+          <img src="project8.jpg" width="230"alt="" />
+          <img src="project9.jpg" width="230"alt="" />
+          <img src="project10.jpg" width="230"alt="" />
+          <img src="project11.jpg" width="230"alt="" />
+          <img src="project12.jpg" width="230"alt="" />
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>prem182474@gmail.com</p>
+        <a href="https://github.com/Wakasa-coder">Github</a>
+        <a href="">LinkedIn</a>
+      </section>
+  </body>
+</html>
